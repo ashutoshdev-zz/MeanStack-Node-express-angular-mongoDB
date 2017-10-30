@@ -1,0 +1,77 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            User
+            <small>Edit User</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="/admin/dashboard#/userList"><i class="fa fa-dashboard"></i> User</a></li>
+            <li class="active">Edit User</li>
+        </ol>
+    </section>
+    <section class="content">
+
+
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-6">
+                <!-- general form elements -->
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Edit User</h3>
+                    </div>
+                    <div class="form-group">
+                        <div class="alert alert-success" ng-show="message">
+                            <strong ng-bind="message" ></strong> 
+                        </div>
+                    </div>
+                    <!-- /.box-header -->
+                    <!-- form start -->
+
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">First Name</label>
+                                <input type="text" class="form-control" name='firstname' ng-model='user.firstname' required="" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Last Name</label>
+                                <input type="text" class="form-control"  name='lastname' ng-model='user.lastname' required="" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control"  name='email' ng-model='user.email' required="" placeholder="Enter email">
+                            </div>                  
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">DOB</label>
+                                <input type="date" class="form-control" required="" name='dob' ng-model='user.dob' placeholder="DOB">
+                            </div> 
+                            <div class='form-group'>
+                                    <select name="role" class="form-control" ng-model='user.role' required="">    
+                                        <option value="">--Select Role--</option>
+                                        <option  value="user">User</option>
+                                        <option  value="admin">Admin</option>
+                                    </select>
+                                </div>
+                            <div class='form-group'>
+                                    <select name="status" class="form-control" ng-model='user.status' required="">    
+                                        <option value="" >--Select Status--</option>
+                                        <option  value="1">Activate</option>
+                                        <option  value="0">DeActivate</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <input type='hidden' placeholder='blog' ng-model='user.id' name='id' class='form-control'>
+                        
+                       </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer">
+                            <div class='btn btn-success pull-right' ng-click='editPost()'>Publish Post</div>                  
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

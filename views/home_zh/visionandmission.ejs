@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" ng-app='fwrk.home'>
+    <head>
+        <meta charset="utf-8">
+        <title>About Us</title>
+        <meta content="" name="description" />
+        <meta content="" name="keywords" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  crossorigin="anonymous">
+        <!-- Optional theme -->      
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"  crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <link rel="stylesheet" href="/home/css/main.css">
+        <link rel="stylesheet" href="/home/css/header.css">
+        <link rel="stylesheet" href="/home/css/footer.css">
+       
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Main Content -->
+        <div ng-include='"/home/templates/header_inner_zh.html"'></div>
+        <div ng-include='"/home/templates/visonandmission.html"'></div>
+        <div ng-include='"/home/templates/footer_zh.html"'></div>
+         <!-- Angular Material Dependencies -->
+         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+         <!-- UI Router -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+         <!-- Angular Material -->
+         <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js"></script>
+         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.js"></script>
+         
+         <!-- Custom JS -->
+         <script src='/home/js/app_zh.js'></script>
+        <script src='/admin/js/lib/markdown.js'></script>
+        <script src='/home/js/controllers/main.js'></script>
+        <script src='/home/js/controllers/post.js'></script>
+        <script src='/common/modules/posts.js'></script> 
+        <script src='/common/modules/pages.js'></script>  
+        <script src='/common/modules/portfolios.js'></script>  
+        <script src='/common/modules/users.js'></script>
+        <script src='/common/modules/clients.js'></script>
+        <script src='/common/modules/testimonials.js'></script>
+        <script src='/common/modules/contacts.js'></script>
+        <script src='/common/modules/careers.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>  
+        <script src='/home/js/intlTelInput.js'></script>
+        <script src='/home/js/bower-angular-translate-2.15.2/angular-translate.min.js'></script>
+        <script src='/home/js/bower-angular-translate-2.15.2/angular-translate.js'></script>   
+         <!-- write script to toggle class on scroll -->
+ <script>
+ $(window).scroll(function() {
+     if ($(this).scrollTop() > 1){  
+         $('header').addClass("sticky");
+     }
+     else{
+         $('header').removeClass("sticky");
+     }
+ });
+ </script>
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/59b38dd34854b82732fef031/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+    </body>
+</html>

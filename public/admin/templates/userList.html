@@ -1,0 +1,144 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Users
+            <small>List</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">Users</a></li>
+            <li class="active">Users List</li>
+        </ol>
+    </section>
+    <div class="form-group">
+        <div class="alert alert-success" ng-show="del">
+            <strong ng-bind="del" ></strong> 
+        </div>
+    </div>
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+
+
+
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">Users List</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Sr. no</th>                                    
+                                    <th>Email</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Created</th>
+                                    <th>Edit</th>
+                                    <th>View</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr ng-repeat='user in users track by $index'>
+                                    <td ng-class="'{{user._id}}'">{{$index + 1}}</td>                                              
+                                    <td ng-class="'{{user._id}}'">{{user.email}}</td>
+                                    <td ng-class="'{{user._id}}'">{{user.firstname}}</td>                                   
+                                    <td ng-class="'{{user._id}}'">{{user.lastname}}</td>
+                                    <td ng-class="'{{user._id}}'">{{user.created_at | date}}</td>     
+                                    <td ng-class="'{{user._id}}'">
+                                        <a ui-sref="editUser({paraml:user._id})">
+                                            <i class="fa fa-edit"></i>Edit</a></td>  
+
+                                            <td ng-class="'{{user._id}}'" ng-click='setActive(user)' style="cursor: pointer">
+
+                                        View</td> 
+                                    <td ng-click="deleteUser(user._id)" ng-class="'{{user._id}}'" ng-show="{{user.role!='admin'}}" style="cursor: pointer">
+
+                                        Delete</td>       
+                                </tr>                                
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Sr. no</th>                                    
+                                    <th>Email</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Created</th>
+                                    <th>Edit</th>
+                                    <th>View</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class='col-sm-8 full-height'>
+                        <div ng-show="activeUser.email">
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="box">
+                                        <div class="box-header">
+                                            <h3 class="box-title">Single data</h3>
+
+
+                                        </div>
+                                        <!-- /.box-header -->
+                                        <div class="box-body table-responsive no-padding">
+                                            <table class="table table-hover">
+                                                <tr>
+                                                    <th>Fields</th>
+                                                    <th>Data</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>First Name</td>
+                                                    <td>{{activeUser.firstname}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>last Name</td>
+                                                    <td>{{activeUser.lastname}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Email</td>
+                                                    <td>{{activeUser.email}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Profile Pic</td>
+                                                    <td>{{activeUser.image}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>DOB</td>
+                                                    <td>{{activeUser.dob | date}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Status</td>
+                                                    <td>{{activeUser.status==1 ? "Activate" : "DeActivate"  }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Role</td>
+                                                    <td>{{activeUser.role}}</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <!-- /.box-body -->
+                                    </div>
+                                    <!-- /.box -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+</div>

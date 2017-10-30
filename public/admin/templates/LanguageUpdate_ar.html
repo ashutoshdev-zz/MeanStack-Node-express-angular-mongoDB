@@ -1,0 +1,719 @@
+<div class="content-wrapper" ng-controller="LanguageUpdateArCtrl">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Language AR
+            <small>List</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">  Language AR</a></li>
+        </ol>
+    </section>
+    <div class="form-group">
+        <div class="alert alert-success" ng-show="update">
+            <strong ng-bind="update" ></strong> 
+        </div>
+    </div>
+
+
+        <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+
+
+
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title"> Language AR</h3>
+                        
+                       
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <div class='btn btn-success pull-right' ng-click='updatelangAr()'>Update</div>  
+                        <table id="example1" class="table table-bordered table-striped">
+                           
+                            <thead>
+                                <tr>
+                                   <th class="languagewid">Banner Content1</th>
+                                   <th class="languagewid"> <input type="text" name='a' ng-model='language.a' /> </th>
+                                  
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">Banner Content2</th>
+                                     <th class="languagewid"> <input type="text" name='b' ng-model='language.b' /> </th>
+                                    
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">INDUSTRIES WE SERVE</th>
+                                     <th class="languagewid"> <input type="text" name='c' ng-model='language.c' /> </th>
+                                    
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">Food and Restaurant Industries</th>
+                                     <th class="languagewid"> <input type="text" name='d' ng-model='language.d' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">Food and Restaurant Industries Content</th>
+                                     <th class="languagewid"> <input type="text" name='e' ng-model='language.e' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">On Demand Economy Services</th>
+                                    <th class="languagewid"> <input type="text" name='f' ng-model='language.f' /> </th>
+                                   
+                                </tr>  
+                                <tr>
+                                     <th class="languagewid">On Demand Economy Services Content</th>
+                                     <th class="languagewid"> <input type="text" name='g' ng-model='language.g' /> </th>
+                                    
+                                </tr>   
+                                 <tr>
+                                     <th class="languagewid">Online Shopping and Ecommerce Industry</th>
+                                    <th class="languagewid"> <input type="text" name='h' ng-model='language.h' /> </th>
+                                   
+                                </tr>  
+                                 <tr>
+                                     <th class="languagewid">Online Shopping and Ecommerce Industry Content</th>
+                                    <th class="languagewid"> <input type="text" name='i' ng-model='language.i' /> </th>
+                                   
+                                </tr>  
+                                 <tr>
+                                     <th class="languagewid">ERP & CRM:Business Process Software</th>
+                                    <th class="languagewid"> <input type="text" name='j' ng-model='language.j' /> </th>
+                                   
+                                </tr>  
+                                <tr>
+                                     <th class="languagewid">ERP & CRM:Business Process Software Content</th>
+                                    <th class="languagewid"> <input type="text" name='k' ng-model='language.k' /> </th>
+                                   
+                                </tr> 
+                                 <tr>
+                                     <th class="languagewid">Hotel And Hospitality Industry</th>
+                                    <th class="languagewid"> <input type="text" name='l' ng-model='language.l' /> </th>
+                                   
+                                </tr>  
+                                 <tr>
+                                     <th class="languagewid">Hotel And Hospitality Industry Content</th>
+                                    <th class="languagewid"> <input type="text" name='m' ng-model='language.m' /> </th>
+                                   
+                                </tr>  
+                                 <tr>
+                                    <th class="languagewid">Real Estate Industry</th>
+                                    <th class="languagewid"> <input type="text" name='n' ng-model='language.n' /> </th>
+                                   
+                                </tr>  
+                                <tr>
+                                    <th class="languagewid">Real Estate Industry Content</th>
+                                    <th class="languagewid"> <input type="text" name='o' ng-model='language.o' /> </th>
+                                   
+                                </tr> 
+                                 <tr>
+                                     <th class="languagewid">Middle Banner1</th>
+                                    <th class="languagewid"> <input type="text" name='p' ng-model='language.p' /> </th>
+                                   
+                                </tr>  
+                                <tr>
+                                     <th class="languagewid">Middle Banner2</th>
+                                    <th class="languagewid"> <input type="text" name='q' ng-model='language.q' /> </th>
+                                   
+                                </tr> 
+                                <tr>
+                                     <th class="languagewid">Middle Banner3</th>
+                                    <th class="languagewid"> <input type="text" name='r' ng-model='language.r' /> </th>
+                                   
+                                </tr> 
+                                <tr>
+                                     <th class="languagewid">Our Clients</th>
+                                    <th class="languagewid"> <input type="text" name='s' ng-model='language.s' /> </th>
+                                   
+                                </tr> 
+                                <tr>
+                                     <th class="languagewid">Our Clients Content</th>
+                                    <th class="languagewid"> <input type="text" name='t' ng-model='language.t' /> </th>
+                                   
+                                </tr> 
+                                <tr>
+                                     <th class="languagewid">WHY FUTURE WORK IS THE LEADING 
+APP DEVELOPMENT FIRM</th>
+                                    <th class="languagewid"> <input type="text" name='u' ng-model='language.u' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">BY THE NUMBER</th>
+                                    <th class="languagewid"> <input type="text" name='v' ng-model='language.v' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">TOP INVESTOR ON BOARD</th>
+                                    <th class="languagewid"> <input type="text" name='w' ng-model='language.w' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">TOP INVESTOR ON BOARD Content</th>
+                                    <th class="languagewid"> <input type="text" name='x' ng-model='language.x' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">DEVELOPMENT STAFF</th>
+                                    <th class="languagewid"> <input type="text" name='y' ng-model='language.y' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">DEVELOPMENT STAFF Content</th>
+                                    <th class="languagewid"> <input type="text" name='z' ng-model='language.z' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">Million in 9 months</th>
+                                    <th class="languagewid"> <input type="text" name='aa' ng-model='language.aa' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">Million in 9 months Content</th>
+                                    <th class="languagewid"> <input type="text" name='ab' ng-model='language.ab' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">Initial consultations</th>
+                                    <th class="languagewid"> <input type="text" name='ac' ng-model='language.ac' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">Initial consultations Content</th>
+                                    <th class="languagewid"> <input type="text" name='ad' ng-model='language.ad' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">verified 5 star client
+reviews</th>
+                                    <th class="languagewid"> <input type="text" name='ae' ng-model='language.ae' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">verified 5 star client
+reviews Content</th>
+                                    <th class="languagewid"> <input type="text" name='af' ng-model='language.af' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">Billion Executive Team</th>
+                                    <th class="languagewid"> <input type="text" name='ag' ng-model='language.ag' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">Billion Executive Team Content</th>
+                                    <th class="languagewid"> <input type="text" name='ah' ng-model='language.ah' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">PORTFOLIO</th>
+                                    <th class="languagewid"> <input type="text" name='ai' ng-model='language.ai' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">WE HAS SPECIALIZED OFFERINGS FOR</th>
+                                    <th class="languagewid"> <input type="text" name='aj' ng-model='language.aj' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">STARTUPS</th>
+                                    <th class="languagewid"> <input type="text" name='ak' ng-model='language.ak' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">Launch and Scale your Product</th>
+                                    <th class="languagewid"> <input type="text" name='al' ng-model='language.al' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">STARTUPS Content</th>
+                                    <th class="languagewid"> <input type="text" name='am' ng-model='language.am' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">ENTERPRISES</th>
+                                    <th class="languagewid"> <input type="text" name='an' ng-model='language.an' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">Deliver Exceptional Digital Experiences</th>
+                                    <th class="languagewid"> <input type="text" name='ao' ng-model='language.ao' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">ENTERPRISES Content</th>
+                                    <th class="languagewid"> <input type="text" name='ap' ng-model='language.ap' /> </th>
+                                   
+                                </tr>
+                                  <tr>
+                                     <th class="languagewid">AGENCIES</th>
+                                    <th class="languagewid"> <input type="text" name='aq' ng-model='language.aq' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">Tap into our technical expertise</th>
+                                    <th class="languagewid"> <input type="text" name='ar' ng-model='language.ar' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">AGENCIES Content</th>
+                                    <th class="languagewid"> <input type="text" name='as' ng-model='language.as' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">Request Free Consultation</th>
+                                    <th class="languagewid"> <input type="text" name='at' ng-model='language.at' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">GET STARTED</th>
+                                    <th class="languagewid"> <input type="text" name='au' ng-model='language.au' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">Provide us with your contact details and we will be in touch soon.</th>
+                                    <th class="languagewid"> <input type="text" name='av' ng-model='language.av' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">Name</th>
+                                    <th class="languagewid"> <input type="text" name='aw' ng-model='language.aw' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">EMAIL</th>
+                                    <th class="languagewid"> <input type="text" name='ax' ng-model='language.ax' /> </th>
+                                   
+                                </tr>
+                                  <tr>
+                                     <th class="languagewid">PHONE</th>
+                                    <th class="languagewid"> <input type="text" name='ay' ng-model='language.ay' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">BUDGET</th>
+                                    <th class="languagewid"> <input type="text" name='az' ng-model='language.az' /> </th>
+                                   
+                                </tr>
+                                  <tr>
+                                     <th class="languagewid">MESSAGE</th>
+                                    <th class="languagewid"> <input type="text" name='aaa' ng-model='language.aaa' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">GET A QUOTE</th>
+                                    <th class="languagewid"> <input type="text" name='aab' ng-model='language.aab' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">ABOUT</th>
+                                    <th class="languagewid"> <input type="text" name='aac' ng-model='language.aac' /> </th>
+                                   
+                                </tr>
+                                   <tr>
+                                     <th class="languagewid">VISION AND MISSION</th>
+                                    <th class="languagewid"> <input type="text" name='aad' ng-model='language.aad' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">WHY FUTUREWORKS</th>
+                                    <th class="languagewid"> <input type="text" name='aae' ng-model='language.aae' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">CLIENTS</th>
+                                    <th class="languagewid"> <input type="text" name='aaf' ng-model='language.aaf' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">TESTIMONIALS</th>
+                                    <th class="languagewid"> <input type="text" name='aag' ng-model='language.aag' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">HOW IT WORK</th>
+                                    <th class="languagewid"> <input type="text" name='aah' ng-model='language.aah' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">CAREER</th>
+                                    <th class="languagewid"> <input type="text" name='aai' ng-model='language.aai' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">BLOG</th>
+                                    <th class="languagewid"> <input type="text" name='aaj' ng-model='language.aaj' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">CONTACT US</th>
+                                    <th class="languagewid"> <input type="text" name='aak' ng-model='language.aak' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">FUTURE’S VISION</th>
+                                    <th class="languagewid"> <input type="text" name='aal' ng-model='language.aal' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">FUTURE’S VISION Content</th>
+                                    <th class="languagewid"> <input type="text" name='aam' ng-model='language.aam' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">FUTURE’S VISION Name</th>
+                                    <th class="languagewid"> <input type="text" name='aan' ng-model='language.aan' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">vision-and-mission Content1</th>
+                                    <th class="languagewid"> <input type="text" name='aao' ng-model='language.aao' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">vision-and-mission Content2</th>
+                                    <th class="languagewid"> <input type="text" name='aap' ng-model='language.aap' /> </th>
+                                   
+                                </tr>
+                                  <tr>
+                                     <th class="languagewid">CROWDSOURCED IDEA GATHERING</th>
+                                    <th class="languagewid"> <input type="text" name='aaq' ng-model='language.aaq' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">CROWDSOURCED IDEA GATHERING Content</th>
+                                    <th class="languagewid"> <input type="text" name='aar' ng-model='language.aar' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">CENTRALISED EXECUTION</th>
+                                    <th class="languagewid"> <input type="text" name='aas' ng-model='language.aas' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">CENTRALISED EXECUTION Content</th>
+                                    <th class="languagewid"> <input type="text" name='aat' ng-model='language.aat' /> </th>
+                                   
+                                </tr>
+                                  <tr>
+                                     <th class="languagewid">GLOBAL ARBITRAGE</th>
+                                    <th class="languagewid"> <input type="text" name='aau' ng-model='language.aau' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">GLOBAL ARBITRAGE Content</th>
+                                    <th class="languagewid"> <input type="text" name='aav' ng-model='language.aav' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">SO WHAT HAVE WE ACCOMPLISHED SO FAR?</th>
+                                    <th class="languagewid"> <input type="text" name='aaw' ng-model='language.aaw' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">SO WHAT HAVE WE ACCOMPLISHED SO FAR? Content1</th>
+                                    <th class="languagewid"> <input type="text" name='aax' ng-model='language.aax' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">SO WHAT HAVE WE ACCOMPLISHED SO FAR? Content2</th>
+                                    <th class="languagewid"> <input type="text" name='aay' ng-model='language.aay' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">SO WHAT HAVE WE ACCOMPLISHED SO FAR? Content3</th>
+                                    <th class="languagewid"> <input type="text" name='aaz' ng-model='language.aaz' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">SO WHAT HAVE WE ACCOMPLISHED SO FAR? Content4</th>
+                                    <th class="languagewid"> <input type="text" name='aaaa' ng-model='language.aaaa' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">WHY FUTURE WORK TECHNOLOGIES?</th>
+                                    <th class="languagewid"> <input type="text" name='aaab' ng-model='language.aaab' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">What’s in it for me if I pick Future Work Technologies</th>
+                                    <th class="languagewid"> <input type="text" name='aaac' ng-model='language.aaac' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">WHY FUTURE WORK TECHNOLOGIES? Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaad' ng-model='language.aaad' /> </th>
+                                   
+                                </tr>
+                                  <tr>
+                                     <th class="languagewid">THE FUTURE WORK TECHNOLOGIES ADVANTAGE</th>
+                                    <th class="languagewid"> <input type="text" name='aaae' ng-model='language.aaae' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">IT MANAGED SERVICES</th>
+                                    <th class="languagewid"> <input type="text" name='aaaf' ng-model='language.aaaf' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">IT MANAGED SERVICES Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaag' ng-model='language.aaag' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">ENTERPRISE APPLICATION SERVICES</th>
+                                    <th class="languagewid"> <input type="text" name='aaah' ng-model='language.aaah' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">ENTERPRISE APPLICATION SERVICES Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaai' ng-model='language.aaai' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">LARGE ENTERPRISES STRUGGLE TO
+ADAPT TO CHANGING MARKET DYNAMICS AT SCALE</th>
+                                    <th class="languagewid"> <input type="text" name='aaaj' ng-model='language.aaaj' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">LARGE ENTERPRISES STRUGGLE TO
+ADAPT TO CHANGING MARKET DYNAMICS AT SCALE Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaak' ng-model='language.aaak' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">LARGE ENTERPRISES STRUGGLE TO
+ADAPT TO CHANGING MARKET DYNAMICS AT SCALE Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaak' ng-model='language.aaak' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">GENERATING IMPACT FOR SOPHISTICATED, COMPLEX ENTERPRISES</th>
+                                    <th class="languagewid"> <input type="text" name='aaal' ng-model='language.aaal' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">GENERATING IMPACT FOR SOPHISTICATED, COMPLEX ENTERPRISES Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaam' ng-model='language.aaam' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">WHAT MAKES US DIFFERENT IS</th>
+                                    <th class="languagewid"> <input type="text" name='aaan' ng-model='language.aaan' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">A no BS approach to software development</th>
+                                    <th class="languagewid"> <input type="text" name='aaao' ng-model='language.aaao' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">WHAT MAKES US DIFFERENT IS Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaap' ng-model='language.aaap' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">why-future-work portfolio</th>
+                                    <th class="languagewid"> <input type="text" name='aaaq' ng-model='language.aaaq' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">why-future-work portfolio name</th>
+                                    <th class="languagewid"> <input type="text" name='aaar' ng-model='language.aaar' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">why-future-work portfolio detail</th>
+                                    <th class="languagewid"> <input type="text" name='aaas' ng-model='language.aaas' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">Privacy Policy</th>
+                                    <th class="languagewid"> <input type="text" name='aaat' ng-model='language.aaat' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">T & C</th>
+                                    <th class="languagewid"> <input type="text" name='aaau' ng-model='language.aaau' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">FAQ</th>
+                                    <th class="languagewid"> <input type="text" name='aaav' ng-model='language.aaav' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">SITEMAP</th>
+                                    <th class="languagewid"> <input type="text" name='aaaw' ng-model='language.aaaw' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">OUR HAPPY CLIENTS</th>
+                                    <th class="languagewid"> <input type="text" name='aaax' ng-model='language.aaax' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">OUR HAPPY CLIENTS Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaay' ng-model='language.aaay' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">OUR HAPPY CLIENTS Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaaz' ng-model='language.aaaz' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">EXCITED TO GET STARTED</th>
+                                    <th class="languagewid"> <input type="text" name='aaaaa' ng-model='language.aaaaa' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">6 things you should know first</th>
+                                    <th class="languagewid"> <input type="text" name='aaaab' ng-model='language.aaaab' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">Secure</th>
+                                    <th class="languagewid"> <input type="text" name='aaaac' ng-model='language.aaaac' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">Initial Chat</th>
+                                    <th class="languagewid"> <input type="text" name='aaaad' ng-model='language.aaaad' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">Get Investors</th>
+                                    <th class="languagewid"> <input type="text" name='aaaae' ng-model='language.aaaae' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">Follow-up Chat</th>
+                                    <th class="languagewid"> <input type="text" name='aaaaf' ng-model='language.aaaaf' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">Total Control</th>
+                                    <th class="languagewid"> <input type="text" name='aaaag' ng-model='language.aaaag' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">Unrivaled Post-Launch Service</th>
+                                    <th class="languagewid"> <input type="text" name='aaaah' ng-model='language.aaaah' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">how-we-work Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaaai' ng-model='language.aaaai' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">FUTURE WORK TOP QUESTIONS</th>
+                                    <th class="languagewid"> <input type="text" name='aaaaj' ng-model='language.aaaaj' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">faq1</th>
+                                    <th class="languagewid"> <input type="text" name='aaaak' ng-model='language.aaaak' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">faq1 Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaaal' ng-model='language.aaaal' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">faq2</th>
+                                    <th class="languagewid"> <input type="text" name='aaaam' ng-model='language.aaaam' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">faq2 Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaaan' ng-model='language.aaaan' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">faq3</th>
+                                    <th class="languagewid"> <input type="text" name='aaaao' ng-model='language.aaaao' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">faq3 Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaaap' ng-model='language.aaaap' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">faq4</th>
+                                    <th class="languagewid"> <input type="text" name='aaaaq' ng-model='language.aaaaq' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">faq4 Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaaar' ng-model='language.aaaar' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">faq5</th>
+                                    <th class="languagewid"> <input type="text" name='aaaas' ng-model='language.aaaas' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                     <th class="languagewid">faq5 Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaaat' ng-model='language.aaaat' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                     <th class="languagewid">faq6</th>
+                                    <th class="languagewid"> <input type="text" name='aaaau' ng-model='language.aaaau' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                    <th class="languagewid">faq6 Content</th>
+                                    <th class="languagewid"> <input type="text" name='aaaav' ng-model='language.aaaav' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                    <th class="languagewid">APPLY NOW – CAREER AT FUTURE WORK TECHNOLOGIES</th>
+                                    <th class="languagewid"> <input type="text" name='aaaaw' ng-model='language.aaaaw' /> </th>
+                                   
+                                </tr>
+                                 <tr>
+                                    <th class="languagewid">SUBMIT YOUR RESUME</th>
+                                    <th class="languagewid"> <input type="text" name='aaaax' ng-model='language.aaaax' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                    <th class="languagewid">Thanks for considering Career at Future Work Technologies. Please complete the form below so that we can connect with you.</th>
+                                    <th class="languagewid"> <input type="text" name='aaaay' ng-model='language.aaaay' /> </th>
+                                   
+                                </tr>
+                                    <tr>
+                                    <th class="languagewid">Banner Content3</th>
+                                    <th class="languagewid"> <input type="text" name='aaaaz' ng-model='language.aaaaz' /> </th>
+                                   
+                                </tr>
+                                <tr>
+                                    <th class="languagewid">Banner Content4</th>
+                                    <th class="languagewid"> <input type="text" name='aaaaaa' ng-model='language.aaaaaa' /> </th>
+                                   
+                                </tr>
+                            </thead>                                                      
+                        </table>
+                        <div class='btn btn-success pull-right' ng-click='updatelangAr()'>Update</div>  
+                    </div>
+                     
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+</div>

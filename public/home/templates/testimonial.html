@@ -1,0 +1,65 @@
+<section class="st-content">
+    <section class="st-testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-heading">
+              <h1>{{aag}}</h1>
+              <p>We are trusted by Startups, Enterprise and Agencies.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 no-padding">
+            <div class="col-md-4 col-sm-4" ng-repeat="testimonial in testimonials">
+              <div class="testimonials_outer">
+                <div class="testimo_thumb"> <img src="{{testimonial.image}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""  width="200" height="300"></div>
+                <div class="user_title"> <strong class="name">{{testimonial.name}}</strong></div>
+                <div class="testimo_inner">
+                  <p>{{testimonial.description.substr(0,100)}}</p>
+                  <a data-toggle="modal" data-target="#myModal{{testimonial._id}}" href="javascript:void(0);" class="test_image_pop"  >Read More</a>
+             
+  
+                
+                  
+                   <!-- Modal -->
+    <div class="modal fade" id="myModal{{testimonial._id}}" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>        
+          </div>
+          <div class="modal-body">
+         
+                    <div class="pop_testimonials">
+                      <div style="position:absolute; left:0; top:0;">
+                        <div class="testimo_thumb sq"><img src="{{testimonial.image}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 60vw, (max-width: 1362px) 62vw, 840px" width="200" height="300"></div>
+                      </div>
+                      <div class="user_title"> <strong class="name" style="text-align:left; float:left; margin-top:13px">{{testimonial.name}}</strong></div>
+                    </div>
+                    <div class="qoute">{{testimonial.description}}<i class="fa fa-quote-right quote_txt" aria-hidden="true"></i></div>
+              
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+                   
+                  
+                  
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  
+  
+  

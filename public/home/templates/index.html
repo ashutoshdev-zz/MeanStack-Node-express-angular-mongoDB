@@ -1,0 +1,449 @@
+<main class="st-wrapper" ng-controller="MainCtrl">
+    <div class="st-content">
+        <div Class="st-slider">
+            <div class="img-pattern"> </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 no-padding">
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <div class="left-sec">
+                                <h1>{{a}}</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 form_ri">
+                            <div class="right-sec">
+                                <div class="form-wrapper">
+                                    <h5>{{aab}}</h5>
+                                    <form class="st-form" method="post" role="Connect Form" ng-submit="addContact()">
+                                        <div class="form-group">
+                                            <input type="text" name="name" ng-model="post.name" class="form-control" placeholder="{{aw}}" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" name="email" ng-model="post.email" class="form-control" placeholder="{{ax}}" required>
+                                        </div>
+<!--                                        <div class="form-group">
+                                            <input type="tel" name="phone" ng-model="post.phone" class="form-control" placeholder="Phone" required>
+                                        </div>-->
+                                        <div class="form-group">
+                                            <input type="tel" name="phone" id="phone" ng-model="post.phone" class="form-control futr_phn" placeholder="{{ay}}" required>
+                                             
+                                         </div>
+                                        <div class="form-group">
+                                            <select class="form-control" name="budget" ng-model="post.budget" required>
+                                                <option selected="">{{az}}</option>
+                                                <option value="USD 1000 - USD 2000">USD 1000 - USD 2000</option>
+                                                <option value="USD 2000 - USD 4000">USD 2000 - USD 4000</option>
+                                                <option value="USD 4000 - USD 6000">USD 4000 - USD 6000</option>
+                                                <option value="USD 6000 - USD 10000">USD 6000 - USD 10000</option>
+                                                <option value="USD 10000 - USD 15000">USD 10000 - USD 15000</option>
+                                                <option value="USD 15000 - USD 20000">USD 15000 - USD 20000</option>
+                                                <option value="USD 20000 - USD 25000">USD 20000 - USD 25000</option>
+                                                <option value="USD 25000 - USD 50000">USD 25000 - USD 50000</option>
+                                                <option value="USD 50000+">USD 50000+</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" required ng-model="post.message" placeholder="Message"></textarea>
+                                        </div>
+                                        <input type="submit" class="btn btn-default btn-form" value="Send a Request">
+                                        <div class="form-group" ng-if="success_msg"  style="background: green;margin-top: 10px;border-radius: 5px;">
+                                            {{success_msg}}
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <div class="text">{{b}}</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <div class="text">{{aaaaz}}</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <div class="text">{{aaaaaa}}</div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center; display:none;"> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> </div>
+            <div class="clr"></div>
+        </div>
+
+        <!--------Serve Sec---------->
+
+        <div class="we_serve_sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-heading">
+                            <h1>{{c}}</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="cont_wrapper"> <span class="serve-ic"><i class="fa fa-cutlery" aria-hidden="true"></i></span> <a href="https://futureworktechnologies.com/article" target="_blank">
+                                <h5>{{d}}</h5>
+                            </a>
+                            <p>{{e}}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="cont_wrapper"> <span class="serve-ic"><i class="fa fa-bell" aria-hidden="true"></i></span>
+                            <h5>{{f}}</h5>
+                            <p>{{g}}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="cont_wrapper"> <span class="serve-ic"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                            <h5>{{h}}</h5>
+                            <p>{{i}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="cont_wrapper"> <span class="serve-ic"><i class="fa fa-desktop" aria-hidden="true"></i></span>
+                            <h5>{{j}}</h5>
+                            <p>{{k}}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="cont_wrapper"> <span class="serve-ic"><i class="fa fa-hospital-o" aria-hidden="true"></i></span>
+                            <h5>{{l}}</h5>
+                            <p>{{m}}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="cont_wrapper"> <span class="serve-ic"><i class="fa fa-building" aria-hidden="true"></i></span>
+                            <h5>{{n}}</h5>
+                            <p>{{o}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+
+        <!------------Ends--------------> 
+
+        <!-------------Banner----------------->
+
+        <div class="banner">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item first-slide next left">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="text-wrap" ng-bind-html="p">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="img-wrap"> <img src="http://i.imgur.com/f3aLhT6.png" alt="" class="" ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item second-slide">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="img-wrap"> <img src="http://i.imgur.com/RRrjM57.png" alt=""></div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="text-wrap" ng-bind-html="q">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item thired-slide active left">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="text-wrap" ng-bind-html="r">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="img-wrap"> <img src="http://i.imgur.com/nZu5smV.png" alt="" class="" ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a></div>
+            <div class="clr"></div>
+        </div>
+
+        <!------------Banner Ends--------------> 
+
+        <!------------Our Client Sec--------------->
+
+        <section class="side-quote-banner" id="bluedot-quote">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="col-sm-7">
+                            <iframe src="&#10;https://player.vimeo.com/video/200819038" width="640" height="338" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="quote">
+                                <div class="quote-text">
+                                    <h1>{{s}}</h1>
+                                    <h3>{{t}}</h3>
+                                </div>
+                                <div class="align-center-button"><a class="btn-req" href="https://futureworktechnologies.com/contact-form/">{{aak}}</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </section>
+
+        <!------------Our Client Sec-------------> 
+
+        <!--appster-Section start Here -->
+        <div class="appster_sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="heading-sec">
+                            <h1>{{u}}</h1>
+                            <h3>{{v}}</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="main-wrapper">
+                        <div class="clearfix">
+                            <div class="col-sm-4">
+                                <div class="content-wrapper">
+                                    <div class="content-head">
+                                        <h1>50<sup>th</sup></h1>
+                                        <figure> <img src="http://i.imgur.com/avEVO4U.png" alt="image not found"> </figure>
+                                    </div>
+                                    <div class="content-body">
+                                        <p>{{w}}</p>
+                                        <span>{{x}}</span> </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="content-wrapper">
+                                    <div class="content-head">
+                                        <h1>221</h1>
+                                        <figure> <img src="http://i.imgur.com/B3GCpYK.png" alt="image not found"> </figure>
+                                    </div>
+                                    <div class="content-body">
+                                        <p>{{y}}</p>
+                                        <span>{{z}}</span> </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="content-wrapper">
+                                    <div class="content-head">
+                                        <h1>$7.5</h1>
+                                        <figure> <img src="http://i.imgur.com/LzQxFZk.png" alt="image not found"> </figure>
+                                    </div>
+                                    <div class="content-body">
+                                        <p>{{aa}}</p>
+                                        <span>{{ab}}</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="content-wrapper">
+                                <div class="content-head">
+                                    <h1>14k+</h1>
+                                    <figure> <img src="http://i.imgur.com/qCniAkJ.png" alt="image not found"> </figure>
+                                </div>
+                                <div class="content-body">
+                                    <p>{{ac}}</p>
+                                    <span>{{ad}}</span> </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix">
+                            <div class="col-sm-4">
+                                <div class="content-wrapper">
+                                    <div class="content-head">
+                                        <h1>100</h1>
+                                        <figure> <img src="http://i.imgur.com/WQdGf5U.png" alt="image not found"> </figure>
+                                    </div>
+                                    <div class="content-body">
+                                        <p>{{ae}}</p>
+                                        <span>{{af}}</span> </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="content-wrapper">
+                                    <div class="content-head">
+                                        <h1>$5.1</h1>
+                                        <figure> <img src="http://i.imgur.com/GNPq4st.png" alt="image not found"> </figure>
+                                    </div>
+                                    <div class="content-body">
+                                        <p>{{ag}}</p>
+                                        <span>{{ah}}</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        <!--appster-Section end Here --> 
+
+        <!--------Portfolio--------->
+
+        <section class="project-gallery">
+            <h1>{{ai}}</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 no-padding">
+                        
+                        <div class="port_img port_img2" ng-repeat="data in portfolio |limitTo:6">
+                            <div class="hovereffect">
+                                <img width="336" height="201" ng-src="{{data.image}}" alt="{{data.name}}" />
+                              <div class="overlay">
+                      <p class="icon-links">
+                          <a  ng-href="{{data.googlepurl}}"target="_blank">
+                              <span class="fa fa-android" aria-hidden="true"></span> 
+                          </a> 
+                          <a ng-href="{{data.appleurl}}" target="_blank"> 
+                              <span class="fa fa-apple" aria-hidden="true"></span>
+                          </a>
+                          <a ng-href="{{data.websiteurl}}" target="_blank"> 
+                              <span class="fa fa-globe" aria-hidden="true">    </span>
+                          </a>
+                      </p>
+                    </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </section>
+
+        <!--------Portfolio-----------> 
+
+        <!-- Slider Section End Here -->
+        <div class="first-three">
+            <h1>{{aj}}</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 no-padding">
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="text-outer">
+                                <h2>{{ak}}</h2>
+                                <h5>{{al}}</h5>
+                                <p>{{am}}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="text-outer">
+                                <h2>{{an}}</h2>
+                                <h5>{{ao}}</h5>
+                                <p>{{ap}}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="text-outer">
+                                <h2>{{aq}}</h2>
+                                <h5>{{ar}}</h5>
+                                <p>{{as}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="btn-center text-center"> <a href="/contact" class="btn-req">{{at}}</a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        <!-- End Here -->
+
+
+
+
+        <!-- Flip Box Section End Here -->
+        <div class="contact-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 no-padding center">
+                        <h1>{{au}}</h1>
+                        <p>{{av}}</p>
+                        <form class="contact-form" role="form" data-ng-submit="addContact()">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" required ng-model="post.name" name="name" placeholder="{{aw}}">
+                                </div>
+                            </div>
+                            <!-- end here -->
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" required ng-model="post.email" name="email" placeholder="{{ax}}">
+                                </div>
+                            </div>
+                            <!-- end here -->
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="tel" id="phone1" class="form-control" onkeypress="return isNumber(event)" required ng-model="post.phone" name="phone" placeholder="{{ay}}">
+                                </div>
+                            </div>
+                            <!-- end here -->
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <select class="form-control" ng-model="post.budget" required>
+                                        <option selected> {{az}}</option>
+                                        <option>USD 1000 - USD 2000</option>
+                                        <option>USD 2000 - USD 4000</option>
+                                        <option>USD 4000 - USD 6000</option>
+                                        <option>USD 6000 - USD 10000</option>
+                                        <option>USD 10000 - USD 15000</option>
+                                        <option>USD 15000 - USD 20000</option>
+                                        <option>USD 20000 - USD 25000</option>
+                                        <option>USD 25000 - USD 50000</option>
+                                        <option>USD 50000+</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- end here -->
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" required ng-model="post.message" placeholder="{{aaa}}" name="message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <!--<button type="submit" class="btn btn-default">Submit</button>-->
+                                <input type="submit" class="btn btn-default btn-sub" value="{{aab}}">
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12" ng-if="success_msg" style="background: green;margin-top: 10px;border-radius: 5px;">
+                                {{success_msg}}
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        <!-- Contact Section End Here --> 
+    </div>
+    <!-- Content Section End Here --> 
+</main>

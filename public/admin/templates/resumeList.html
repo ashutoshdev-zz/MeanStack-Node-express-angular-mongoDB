@@ -1,0 +1,151 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Job Requests
+            <small>List</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">Job Requests</a></li>
+            <li class="active">Requests List</li>
+        </ol>
+    </section>
+    <div class="form-group">
+        <div class="alert alert-success" ng-show="del">
+            <strong ng-bind="del" ></strong> 
+        </div>
+    </div>
+
+
+        <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+
+
+
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">Requests List</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Sr. no</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Position Applied for</th>
+                                    <th>Created</th>
+                                    <th>View</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr ng-repeat='post in posts track by $index'>
+
+                                    <td ng-class="'{{post._id}}'">{{$index + 1}}</td>           
+                                    <td ng-class="'{{post._id}}'">{{post.name}}</td>     
+                                    <td ng-class="'{{post._id}}'">{{post.email}}</td>     
+                                    <td ng-class="'{{post._id}}'">{{post.position}}</td>     
+                                    <td ng-class="'{{post._id}}'">{{post.created_at | date}}</td>   
+
+                                    <td ng-class="'{{post._id}}'" ng-click='setActive(post)' style="cursor: pointer">
+
+                                        View</td> 
+                                    <td ng-click="deletepost(post._id)" ng-class="'{{post._id}}'" style="cursor: pointer">
+
+                                        Delete</td>  
+
+                                </tr>   
+
+                            </tbody>
+                            <tfoot>
+                                 <tr>
+                                    <th>Sr. no</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Postion Applied for</th>
+                                    <th>Created</th>
+                                    <th>View</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <div class='col-sm-8 full-height'>
+                        <div ng-show="activePost.email">
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="box">
+                                        <div class="box-header">
+                                            <h3 class="box-title">Single data</h3>
+
+
+                                        </div>
+                                        <!-- /.box-header -->
+                                        <div class="box-body table-responsive no-padding">
+                                            <table class="table table-hover">
+                                                <tr>
+                                                    <th>Fields</th>
+                                                    <th>Data</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>{{activePost.name}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Email</td>
+                                                    <td>{{activePost.email}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Position Applied for</td>
+                                                    <td>{{activePost.position}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Phone</td>
+                                                    <td>{{activePost.phone1}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Phone</td>
+                                                    <td>{{activePost.phone2}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Attachment Url</td>
+                                                    <td><a href="{{activePost.file}}" target="_blank">{{activePost.file}}</a></td>
+                                                </tr>
+                                                
+                                            </table>
+                                        </div>
+                                        <!-- /.box-body -->
+                                    </div>
+                                    <!-- /.box -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+
+
+
+
+
+
+
+
+
+</div>

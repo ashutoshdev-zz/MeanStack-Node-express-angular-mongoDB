@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en" ng-app='fwrk.home'>
+    <head>
+        <meta charset="utf-8">
+        <title><%- metaTagsTitle %></title>
+        <meta content="<%- metaDescription %>" name="description" />
+        <meta content="<%- metaTagsKeyWords %>" name="keywords" />
+        <meta property="og:title" content="<%- metaTagsTitle %>" />
+        <meta property="og:url"   content="<%- metaTagsUrl %>" />
+        <meta property="og:description" content="<%- metaDescription %>" />
+        <!-- Schema.org markup for Google+ -->
+        <meta itemprop="description" content="<%- metaDescription %>" />
+        <!-- Twitter Card data -->    
+        <meta name="twitter:site" content="<%- metaTagsUrl %>">
+        <meta name="twitter:url" content="<%- metaTagsUrl %>">
+        <meta name="twitter:title" content="<%- metaTagsTitle %>">
+        <meta name="twitter:description" content="<%- metaDescription %>">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  crossorigin="anonymous">
+        <!-- Optional theme -->      
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"  crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <link rel="stylesheet" href="/home/css/main.css">
+        <link rel="stylesheet" href="/home/css/header.css">
+        <link rel="stylesheet" href="/home/css/footer.css">
+        <link rel="stylesheet" href="/home/css/post.css">
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Main Content -->
+        <div ng-include='"/home/templates/header_inner_pt.html"'></div>
+        <div ng-include='"/home/templates/post.html"'></div>
+         <!-- Disques api starts here-->
+         
+                      
+         <!-- ends here -->
+        <div ng-include='"/home/templates/footer_pt.html"'></div>
+         <!-- Angular Material Dependencies -->
+         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+         <!-- UI Router -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+         <!-- Angular Material -->
+         <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js"></script>
+         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.js"></script>
+         
+         <!-- Custom JS -->
+       <script src='/home/js/app_pt.js'></script>
+        <script src='/admin/js/lib/markdown.js'></script>
+        <script src='/home/js/controllers/main.js'></script>
+        <script src='/home/js/controllers/post.js'></script>
+        <script src='/common/modules/posts.js'></script> 
+        <script src='/common/modules/pages.js'></script>  
+        <script src='/common/modules/portfolios.js'></script>  
+        <script src='/common/modules/users.js'></script>
+        <script src='/common/modules/clients.js'></script>
+        <script src='/common/modules/testimonials.js'></script>
+        <script src='/common/modules/contacts.js'></script>
+        <script src='/common/modules/careers.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>  
+        <script src='/home/js/intlTelInput.js'></script>
+        <script src='/home/js/bower-angular-translate-2.15.2/angular-translate.min.js'></script>
+        <script src='/home/js/bower-angular-translate-2.15.2/angular-translate.js'></script>  
+             <!-- write script to toggle class on scroll -->
+     <script>
+     $(window).scroll(function() {
+         if ($(this).scrollTop() > 1){  
+             $('header').addClass("sticky");
+         }
+         else{
+             $('header').removeClass("sticky");
+         }
+     });
+     </script>
+      <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/59b38dd34854b82732fef031/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<script>
+        
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { 
+            var current_url = window.location.href;
+            var slug_position = current_url.lastIndexOf("/");
+            var slug = current_url.substr(slug_position);
+            var page_title = slug.replace(/-/g,' ');
+            var disqus_config = function () {
+        this.page.url = current_url;
+        this.page.identifier = slug;
+        this.page.title = page_title;
+    };
+            
+            // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://fwrk.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                       
+    </body>
+</html>

@@ -1,0 +1,182 @@
+<section class="career-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 no-padding">
+          <div class="page-heading">
+            <h1>{{aaaaw}}</h1>
+          </div>
+          <div class="form-outer">
+            <div class="form-heading">
+              <h1>{{aaaax}}</h1>
+              <h5>{{aaaay}}</h5>
+            </div>
+            <div role="form" class="wpcf7" id="wpcf7-f193-p42-o1" dir="ltr" lang="en-US">
+              <div class="screen-reader-response"></div>
+              <form method="post"  enctype="multipart/form-data" ng-submit="submit()" >
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>{{aw}}<span>*</span></label>
+                    <br>
+                    <span class="wpcf7-form-control-wrap name">
+                    <input name="name" size="40" class="form-control" type="text" ng-model="post.name" required>
+                    </span></div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>{{ax}}<span>*</span></label>
+                    <br>
+                    <span class="wpcf7-form-control-wrap email">
+                    <input name="email" size="40" class="form-control" type="email" ng-model="post.email" required>
+                    </span></div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>{{ay}}<span>*</span></label>
+                    <br>
+                    <span class="wpcf7-form-control-wrap intl_tel-553">
+                    <div class="intl-tel-input">
+                     
+                     <input type="tel" name="phone" id="phone" ng-model="post.phone1" class="form-control futr_phn"  required>
+                    </div>
+                    <input name="intl_tel-553" class="wpcf7-intl-tel-full" type="hidden">
+                    <input name="intl_tel-553-cf7it-country-name" class="wpcf7-intl-tel-country-name" type="hidden">
+                    <input name="intl_tel-553-cf7it-country-code" class="wpcf7-intl-tel-country-code" type="hidden">
+                    </span></div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>{{ay}}<span>*</span></label>
+                    <br>
+                    <span class="wpcf7-form-control-wrap phone">
+                    <input name="phone2" value="" size="40" class="form-control" required ng-model="post.phone2" type="text">
+                    </span></div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Position Applying For<span>*</span></label>
+                    <br>
+                    <span class="wpcf7-form-control-wrap Select_Position">
+                    <select name="Select_Position" class="form-control" ng-model="post.position" required>
+                      <option value="">---</option>
+                      <option value="Software Tester">Software Tester</option>
+                      <option value="Software Architect">Software Architect</option>
+                      <option value="Business Development">Business Development</option>
+                      <option value="Project Manager">Project Manager</option>
+                      <option value="HR Executive">HR Executive</option>
+                      <option value="Hybrid Mobile App Developer">Hybrid Mobile App Developer</option>
+                      <option value="Web Developer">Web Developer</option>
+                      <option value="S.E.O">S.E.O</option>
+                      <option value="Web Designer">Web Designer</option>
+                      <option value="Content Writer">Content Writer</option>
+                      <option value="Digital Marketing Executive">Digital Marketing Executive</option>
+                      <option value="Network Engineer">Network Engineer</option>
+                      <option value="Online Bidder">Online Bidder</option>
+                      <option value="Android App Developer">Android App Developer</option>
+                      <option value="IOS App Developer">IOS App Developer</option>
+                    </select>
+                    </span></div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Description Or Cover Letter<span>*</span></label>
+                    <br>
+                    <span class="wpcf7-form-control-wrap fvg">
+                    <input name="fvg" value="" size="40" class="form-control" required type="text" ng-model="post.cover_letter">
+                    </span></div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Attach Resume<span>*</span></label>
+                    <br>
+                    <span class="wpcf7-form-control-wrap file-359">
+                      <!--<input name="file" ngf-select="upload($file)" size="40" class="form-control" type="file">-->
+                    <input name="file" size="40" class="form-control" required type="file" ng-model="post.file" onchange="angular.element(this).scope().uploadFile(this)"> 
+                    </span></div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Please Enter Any Two Digit<span>*</span></label>
+                    <br>
+                    <span class="wpcf7-form-control-wrap verify">
+                    <input name="verify" value="" size="40" class="form-control" type="text">
+                    </span></div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>&nbsp;</label>
+                    <br>
+                    <input value="Apply Now" type="submit">
+                    <div class="form-group" ng-if="success_msg"  style="background: green;margin-top: 10px;border-radius: 5px;">
+                    {{success_msg}}
+                </div>
+                    </div>
+                </div>
+                <div class="wpcf7-response-output wpcf7-display-none"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clr"></div>
+  </section>
+  <section class="carrer-port-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 no-padding">
+          <div class="page-heading">
+            <h1>Future @ Future Work Technologies</h1>
+          </div>
+          <div class="port-inner-sec">
+            <div class="col-md-8 col-sm-8">
+              <div class="overlay-wrapper">
+                <figure><img class="alignnone size-medium wp-image-558" src="https://futureworktechnologies.com/wp-content/uploads/2017/01/10-300x225.jpg" alt="" srcset="https://futureworktechnologies.com/wp-content/uploads/2017/01/10-300x225.jpg 300w, https://futureworktechnologies.com/wp-content/uploads/2017/01/10-768x576.jpg 768w, https://futureworktechnologies.com/wp-content/uploads/2017/01/10.jpg 800w" sizes="(max-width: 300px) 85vw, 300px" width="300" height="225"></figure>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="overlay-wrapper">
+                <figure><img class="alignnone size-medium wp-image-562" src="https://futureworktechnologies.com/wp-content/uploads/2017/01/12a-300x225.jpg" alt="" srcset="https://futureworktechnologies.com/wp-content/uploads/2017/01/12a-300x225.jpg 300w, https://futureworktechnologies.com/wp-content/uploads/2017/01/12a.jpg 400w" sizes="(max-width: 300px) 85vw, 300px" width="300" height="225"></figure>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="overlay-wrapper">
+                <figure><img class="alignnone size-medium wp-image-564" src="https://futureworktechnologies.com/wp-content/uploads/2017/01/3-200x300.jpg" alt="" srcset="https://futureworktechnologies.com/wp-content/uploads/2017/01/3-200x300.jpg 200w, https://futureworktechnologies.com/wp-content/uploads/2017/01/3.jpg 400w" sizes="(max-width: 200px) 85vw, 200px" width="200" height="300"></figure>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="overlay-wrapper">
+                <figure><img class="alignnone size-medium wp-image-565" src="https://futureworktechnologies.com/wp-content/uploads/2017/01/4-200x300.jpg" alt="" srcset="https://futureworktechnologies.com/wp-content/uploads/2017/01/4-200x300.jpg 200w, https://futureworktechnologies.com/wp-content/uploads/2017/01/4.jpg 400w" sizes="(max-width: 200px) 85vw, 200px" width="200" height="300"></figure>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="overlay-wrapper">
+                <figure><img class="alignnone size-medium wp-image-566" src="https://futureworktechnologies.com/wp-content/uploads/2017/01/2-300x225.jpg" alt="" srcset="https://futureworktechnologies.com/wp-content/uploads/2017/01/2-300x225.jpg 300w, https://futureworktechnologies.com/wp-content/uploads/2017/01/2.jpg 400w" sizes="(max-width: 300px) 85vw, 300px" width="300" height="225"></figure>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="overlay-wrapper">
+                <figure><img class="alignnone size-medium wp-image-567" src="https://futureworktechnologies.com/wp-content/uploads/2017/01/team-one-300x225.jpg" alt="" srcset="https://futureworktechnologies.com/wp-content/uploads/2017/01/team-one-300x225.jpg 300w, https://futureworktechnologies.com/wp-content/uploads/2017/01/team-one.jpg 400w" sizes="(max-width: 300px) 85vw, 300px" width="300" height="225"></figure>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="overlay-wrapper">
+                <figure><img class="alignnone size-medium wp-image-568" src="https://futureworktechnologies.com/wp-content/uploads/2017/01/team-two-300x225.jpg" alt="" srcset="https://futureworktechnologies.com/wp-content/uploads/2017/01/team-two-300x225.jpg 300w, https://futureworktechnologies.com/wp-content/uploads/2017/01/team-two.jpg 400w" sizes="(max-width: 300px) 85vw, 300px" width="300" height="225"></figure>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="overlay-wrapper">
+                <figure><img class="alignnone size-medium wp-image-570" src="https://futureworktechnologies.com/wp-content/uploads/2017/01/11b-300x225.jpg" alt="" srcset="https://futureworktechnologies.com/wp-content/uploads/2017/01/11b-300x225.jpg 300w, https://futureworktechnologies.com/wp-content/uploads/2017/01/11b.jpg 400w" sizes="(max-width: 300px) 85vw, 300px" width="300" height="225"></figure>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="overlay-wrapper">
+                <figure><img class="alignnone size-medium wp-image-571" src="https://futureworktechnologies.com/wp-content/uploads/2017/01/1-300x225.jpg" alt="" srcset="https://futureworktechnologies.com/wp-content/uploads/2017/01/1-300x225.jpg 300w, https://futureworktechnologies.com/wp-content/uploads/2017/01/1.jpg 400w" sizes="(max-width: 300px) 85vw, 300px" width="300" height="225"></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clr"></div>
+  </section>
+  

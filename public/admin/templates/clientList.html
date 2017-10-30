@@ -1,0 +1,158 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Clients
+            <small>List</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">Clients</a></li>
+            <li class="active">Clients List</li>
+        </ol>
+    </section>
+    <div class="form-group">
+        <div class="alert alert-success" ng-show="del">
+            <strong ng-bind="del" ></strong> 
+        </div>
+    </div>
+
+
+        <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+
+
+
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">Clients List</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Sr. no</th>
+                                    <th>Image</th>
+                                    <th>Created</th>
+                                    <th>Edit</th>
+                                    <th>View</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr ng-repeat='post in posts track by $index'>
+
+                                    <td ng-class="'{{post._id}}'">{{$index + 1}}</td>           
+                                    <td ng-class="'{{post._id}}'">{{post.image}}</td>     
+                                    <td ng-class="'{{post._id}}'">{{post.created_at | date}}</td>      
+                                    <td ng-class="'{{post._id}}'">
+                                        <a ui-sref="editCategory({paraml:post._id})">
+                                            <i class="fa fa-edit"></i>Edit</a></td>  
+
+                                    <td ng-class="'{{post._id}}'" ng-click='setActive(post)' style="cursor: pointer">
+
+                                        View</td> 
+                                    <td ng-click="deletepost(post._id)" ng-class="'{{post._id}}'" style="cursor: pointer">
+
+                                        Delete</td>  
+
+                                </tr>   
+
+                            </tbody>
+                            <tfoot>
+                                 <tr>
+                                    <th>Sr. no</th>
+                                    <th>Image</th>
+                                    <th>Created</th>
+                                    <th>Edit</th>
+                                    <th>View</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <div class='col-sm-8 full-height'>
+                        <div ng-show="activePost.image">
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="box">
+                                        <div class="box-header">
+                                            <h3 class="box-title">Single data</h3>
+
+
+                                        </div>
+                                        <!-- /.box-header -->
+                                        <div class="box-body table-responsive no-padding">
+                                            <table class="table table-hover">
+                                                <tr>
+                                                    <th>Fields</th>
+                                                    <th>Data</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Image</td>
+                                                    <td><img src="{{activePost.image}}" /></td>
+                                                </tr>
+                                                
+                                            </table>
+                                        </div>
+                                        <!-- /.box-body -->
+                                    </div>
+                                    <!-- /.box -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+
+
+
+
+
+
+
+
+    
+<!-- 
+    <div class='row full-height'> -->
+    <!-- Sidebar -->
+    <!-- <div class='col-sm-4'>
+        <h3>Published posts</h3>      
+        <ul class="list-group">
+            <li ng-show="!posts.length">No posts have been published</li> 
+            <li ng-repeat='post in posts track by $index' class="list-group-item" ng-class="{'active': (activePost === post)}" ng-click='setActive(post)'>
+                <h4 class="list-group-item-heading">{{post.title}}</h4>
+                <p class="list-group-item-text">{{post.description.substr(0, 140)}}</p>                           
+            </li>
+        </ul>
+    </div> -->
+    <!-- /Sidebar -->
+    <!-- Page Content -->
+   <!--  <div class='col-sm-8 full-height'>
+         <h2>{{activePost.title}}</h2>       
+         <div btf-markdown='activePost.paramal'></div>
+         <div btf-markdown='activePost.metakeywords'></div>
+         <div btf-markdown='activePost.metadescription'></div>
+         <img ng-src="{{activePost.himage}}"/>
+         <div btf-markdown='activePost.description'></div>
+         <img ng-src="{{activePost.simage}}"/>
+         <div ><a ui-sref="editPost({paraml:activePost.paramal})" ng-show="activePost.paramal">Edit</a></div>
+         <div ng-click="deletepost(activePost._id)" ng-show="activePost.paramal">Delete</div>
+       
+    </div> -->
+<!-- </div> -->
+</div>

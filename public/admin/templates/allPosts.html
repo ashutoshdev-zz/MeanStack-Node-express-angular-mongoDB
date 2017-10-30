@@ -1,0 +1,239 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Posts
+            <small>List</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">Posts</a></li>
+            <li class="active">Posts List</li>
+        </ol>
+    </section>
+    <div class="form-group">
+        <div class="alert alert-success" ng-show="del">
+            <strong ng-bind="del" ></strong> 
+        </div>
+    </div>
+
+
+        <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+
+
+
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">Posts List</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        
+                            <span id="mydiv">
+                                <img class="ajax-loader" src="dist/img/loader.gif" style="/*! width: 50px; */">
+                            </span>
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Sr. no</th>
+                                    <th>Title</th>
+                                    <th>Param</th>
+                                    <th>Description</th>
+                                    <th>Created</th>
+                                    <th>Edit</th>
+                                    <th>View</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr ng-repeat='post in posts track by $index'>
+
+                                    <td ng-class="'{{post._id}}'">{{$index + vm.pager.startIndex+1}}</td>           
+                                    <td ng-class="'{{post._id}}'">{{post.title}}</td>                                   
+                                    <td ng-class="'{{post._id}}'">{{post.paramal}}</td>
+                                    <td ng-class="'{{post._id}}'">{{post.description.substr(0, 140)}}</td>
+                                    <td ng-class="'{{post._id}}'">{{post.created_at | date}}</td>      
+                                    <td ng-class="'{{post._id}}'">
+                                        <a ui-sref="editPost({paraml:post.paramal})">
+                                            <i class="fa fa-edit"></i>Edit</a></td>  
+
+                                    <td ng-class="'{{post._id}}'" ng-click='setActive(post)' style="cursor: pointer">
+
+                                        View</td> 
+                                    <td ng-click="deletepost(post._id)" ng-class="'{{post._id}}'" style="cursor: pointer">
+
+                                        Delete</td>  
+
+                                </tr>   
+
+                            </tbody>
+                            <tfoot>
+                                 <tr>
+                                    <th>Sr. no</th>
+                                    <th>Title</th>
+                                    <th>Param</th>
+                                    <th>Description</th>
+                                    <th>Created</th>
+                                    <th>Edit</th>
+                                    <th>View</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Showing {{vm.pager.startIndex+1}} to {{vm.pager.endIndex+1}} of {{vm.pager.totalItems}} entries</div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="dataTables_paginate paging_simple_numbers" id="example1_paginate">
+                                <!-- <ul class="pagination">
+                                    <li class="paginate_button previous" id="example1_previous">
+                                        <a href="javascript:void(0)">Previous</a>
+                                    </li>
+                                    <li class="paginate_button ">
+                                        <a href="javascript:void(0)" ng-click='pagination(0,10)'>1</a>
+                                    </li>
+                                    <li class="paginate_button next disabled" id="example1_next">
+                                        <a href="javascript:void(0)" ng-click='pagination(11,20)'>Next</a>
+                                    </li>
+                                </ul> -->
+
+                                <!--Pagination Element -->
+                                <ul ng-if="vm.pager.pages.length" class="pagination" ng-include='"/admin/templates/element/pagination.html"'>
+                                    
+                                </ul>
+
+                                <!-- pager -->
+        <!-- <ul ng-if="vm.pager.pages.length" class="pagination">
+                <li ng-class="{disabled:vm.pager.currentPage === 1}">
+                    <a ng-click="vm.setPage(1)">First</a>
+                </li>
+                <li ng-class="{disabled:vm.pager.currentPage === 1}">
+                    <a ng-click="vm.setPage(vm.pager.currentPage - 1)">Previous</a>
+                </li>
+                <li ng-repeat="page in vm.pager.pages" ng-class="{active:vm.pager.currentPage === page}">
+                    <a ng-click="vm.setPage(page)">{{page}}</a>
+                </li>               
+                <li ng-class="{disabled:vm.pager.currentPage === vm.pager.totalPages}">
+                    <a ng-click="vm.setPage(vm.pager.currentPage + 1)">Next</a>
+                </li>
+                <li ng-class="{disabled:vm.pager.currentPage === vm.pager.totalPages}">
+                    <a ng-click="vm.setPage(vm.pager.totalPages)">Last</a>
+                </li>
+            </ul> -->
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='col-sm-8 full-height'>
+                        <div ng-show="activePost.paramal">
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="box">
+                                        <div class="box-header">
+                                            <h3 class="box-title">Single data</h3>
+
+
+                                        </div>
+                                        <!-- /.box-header -->
+                                        <div class="box-body table-responsive no-padding">
+                                            <table class="table table-hover">
+                                                <tr>
+                                                    <th>Fields</th>
+                                                    <th>Data</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Title</td>
+                                                    <td>{{activePost.title}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Parma Link</td>
+                                                    <td>{{activePost.paramal}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Description</td>
+                                                    <td>{{activePost.description}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Image</td>
+                                                    <td>{{activePost.image}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Meta Description</td>
+                                                    <td>{{activePost.metadescription}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Meta Keywords</td>
+                                                    <td>{{activePost.metakeywords}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Category</td>
+                                                    <td>{{activePost.category}}</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <!-- /.box-body -->
+                                    </div>
+                                    <!-- /.box -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+
+
+
+
+
+
+
+
+    
+<!-- 
+    <div class='row full-height'> -->
+    <!-- Sidebar -->
+    <!-- <div class='col-sm-4'>
+        <h3>Published posts</h3>      
+        <ul class="list-group">
+            <li ng-show="!posts.length">No posts have been published</li> 
+            <li ng-repeat='post in posts track by $index' class="list-group-item" ng-class="{'active': (activePost === post)}" ng-click='setActive(post)'>
+                <h4 class="list-group-item-heading">{{post.title}}</h4>
+                <p class="list-group-item-text">{{post.description.substr(0, 140)}}</p>                           
+            </li>
+        </ul>
+    </div> -->
+    <!-- /Sidebar -->
+    <!-- Page Content -->
+   <!--  <div class='col-sm-8 full-height'>
+         <h2>{{activePost.title}}</h2>       
+         <div btf-markdown='activePost.paramal'></div>
+         <div btf-markdown='activePost.metakeywords'></div>
+         <div btf-markdown='activePost.metadescription'></div>
+         <img ng-src="{{activePost.himage}}"/>
+         <div btf-markdown='activePost.description'></div>
+         <img ng-src="{{activePost.simage}}"/>
+         <div ><a ui-sref="editPost({paraml:activePost.paramal})" ng-show="activePost.paramal">Edit</a></div>
+         <div ng-click="deletepost(activePost._id)" ng-show="activePost.paramal">Delete</div>
+       
+    </div> -->
+<!-- </div> -->
+</div>

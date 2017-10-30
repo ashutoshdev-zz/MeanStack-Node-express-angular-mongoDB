@@ -1,0 +1,257 @@
+<section class="blog-page-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 no-padding">
+          <div class="blog_main">
+            <div class="col-md-8 col-sm-8 col-xs-12">
+              <div class="blog-wrapper">
+
+                <div class="blog-post" ng-if="blogs" ng-repeat="blog in blogs">
+                  <div class="blog-heading">
+                    <h1> <a href="{{blog.paramal}}"> {{blog.title}}</a></h1>
+                  </div>
+                  <div class="author-details">
+                    <div class="author-image">
+                        <img ng-if="!blog.author_image" src="https://futureworktechnologies.com/wp-content/uploads/2017/03/PicsArt_14182785692513.jpg" alt="">
+                      <img ng-if="blog.author_image" src="{{blog.author_image}}" alt="">
+                    </div>
+                    <div class="author_icon">
+                      <div class="author-name"><span> By 
+                          <a ng-if="!blog.author_name" href="{{blog.paramal}}">Navnish Bansal</a> 
+                          
+                        <a ng-if="blog.author_name" href="{{blog.paramal}}">{{blog.author_name}}</a> 
+                      </span></div>
+                      <div class="post-date"><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i>{{blog.created_at | date}}</span></div>
+                      <div class="post_comment"><span class="comment-inner"><i class="fa fa-commenting" aria-hidden="true"></i> Comment(s) | 0</span></div>
+                    </div>
+                  </div>
+                  <div class="image_cover">
+                    <div class="blog-img-wrapper"></div>
+                  </div>
+                  <div class="blog-text">
+                    <div class="text-inner">
+                      <p></p>
+                      <!-- blog.description.substr(0,500) -->
+                      <p ng-bind-html="blog.description.substr(0,500)"></p>
+                        <p></p>
+                      <div class="btn-sec"> <a href="{{blog.paramal}}">Continue Reading</a></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="blog-post">
+                  <div class="blog-heading">
+                    <h1> <a href="https://futureworktechnologies.com/buzzfeed-business-revenue-model/"> BuzzFeed business revenue model</a></h1>
+                  </div>
+                  <div class="author-details">
+                    <div class="author-image"><img src="https://futureworktechnologies.com/wp-content/uploads/2017/03/PicsArt_14182785692513.jpg" alt=""></div>
+                    <div class="author_icon">
+                      <div class="author-name"><span> By <a href="https://futureworktechnologies.com/buzzfeed-business-revenue-model/">Navnish Bansal</a> </span></div>
+                      <div class="post-date"><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i>30-Aug-2017</span></div>
+                      <div class="post_comment"><span class="comment-inner"><i class="fa fa-commenting" aria-hidden="true"></i> Comment(s) | 0</span></div>
+                    </div>
+                  </div>
+                  <div class="image_cover">
+                    <div class="blog-img-wrapper"></div>
+                  </div>
+                  <div class="blog-text">
+                    <div class="text-inner">
+                      <p></p>
+                      <p>BuzzFeed business revenue model BuzzFeed business revenue model makes content over numerous channels and covering a scope of points, with a view to giving opportune inclining and mainstream culture scope to clients over its universal markets. &nbsp; BuzzFeed business revenue model History BuzzFeed was established in 2006 by Jonah (“Peretti”). The Company created out of … <a href="https://futureworktechnologies.com/buzzfeed-business-revenue-model/" class="more-link">Continue reading<span class="screen-reader-text"> “BuzzFeed business revenue model”</span></a></p>
+                      <p></p>
+                      <div class="btn-sec"> <a href="https://futureworktechnologies.com/buzzfeed-business-revenue-model/">Continue Reading</a></div>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="blog-post">
+                  <div class="blog-heading">
+                    <h1> <a href="https://futureworktechnologies.com/reddit-business-revenue-model-valuation-income-idea/"> Reddit business revenue model | Valuation and income idea</a></h1>
+                  </div>
+                  <div class="author-details">
+                    <div class="author-image"><img src="https://futureworktechnologies.com/wp-content/uploads/2017/03/PicsArt_14182785692513.jpg" alt=""></div>
+                    <div class="author_icon">
+                      <div class="author-name"><span> By <a href="https://futureworktechnologies.com/reddit-business-revenue-model-valuation-income-idea/">Navnish Bansal</a> </span></div>
+                      <div class="post-date"><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i>23-Aug-2017</span></div>
+                      <div class="post_comment"><span class="comment-inner"><i class="fa fa-commenting" aria-hidden="true"></i> Comment(s) | 0</span></div>
+                    </div>
+                  </div>
+                  <div class="image_cover">
+                    <div class="blog-img-wrapper"></div>
+                  </div>
+                  <div class="blog-text">
+                    <div class="text-inner">
+                      <p></p>
+                      <p>In Reddit business revenue model intends to give a cooperative online social news announcement board where group individuals vote on content. It works as an auxiliary of Conde Nast’s parent organization Advance Publications. &nbsp; History of Reddit business revenue model &nbsp; Reddit was established in 2005 by University of Virginia graduates Alexis (“Ohanian”) and Steve … <a href="https://futureworktechnologies.com/reddit-business-revenue-model-valuation-income-idea/" class="more-link">Continue reading<span class="screen-reader-text"> “Reddit business revenue model | Valuation and income idea”</span></a></p>
+                      <p></p>
+                      <div class="btn-sec"> <a href="https://futureworktechnologies.com/reddit-business-revenue-model-valuation-income-idea/">Continue Reading</a></div>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="blog-post">
+                  <div class="blog-heading">
+                    <h1> <a href="https://futureworktechnologies.com/spacex-business-revenue-model-strategy-profitable/"> SpaceX Business Revenue model | Strategy &amp; profitable</a></h1>
+                  </div>
+                  <div class="author-details">
+                    <div class="author-image"><img src="https://futureworktechnologies.com/wp-content/uploads/2017/03/PicsArt_14182785692513.jpg" alt=""></div>
+                    <div class="author_icon">
+                      <div class="author-name"><span> By <a href="https://futureworktechnologies.com/spacex-business-revenue-model-strategy-profitable/">Navnish Bansal</a> </span></div>
+                      <div class="post-date"><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i>22-Aug-2017</span></div>
+                      <div class="post_comment"><span class="comment-inner"><i class="fa fa-commenting" aria-hidden="true"></i> Comment(s) | 0</span></div>
+                    </div>
+                  </div>
+                  <div class="image_cover">
+                    <div class="blog-img-wrapper"></div>
+                  </div>
+                  <div class="blog-text">
+                    <div class="text-inner">
+                      <p></p>
+                      <p>Motive of SpaceX SpaceX Business Revenue model main goal is to push past humankind’s present challenges with space go by bringing down the expenses and commercializing the procedure. SpaceX business revenue model History In SpaceX Business Revenue model, Business person and PayPal fellow benefactor Elon Musk trusted that people ought to be effectively investigating space … <a href="https://futureworktechnologies.com/spacex-business-revenue-model-strategy-profitable/" class="more-link">Continue reading<span class="screen-reader-text"> “SpaceX Business Revenue model | Strategy &amp; profitable”</span></a></p>
+                      <p></p>
+                      <div class="btn-sec"> <a href="https://futureworktechnologies.com/spacex-business-revenue-model-strategy-profitable/">Continue Reading</a></div>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="blog-post">
+                  <div class="blog-heading">
+                    <h1> <a href="https://futureworktechnologies.com/want-develop-app-like-sarahah-business-model-cost/"> Want to develop an app like Sarahah | Business model cost to develop an app like Sarahah</a></h1>
+                  </div>
+                  <div class="author-details">
+                    <div class="author-image"><img src="https://futureworktechnologies.com/wp-content/uploads/2017/03/PicsArt_14182785692513.jpg" alt=""></div>
+                    <div class="author_icon">
+                      <div class="author-name"><span> By <a href="https://futureworktechnologies.com/want-develop-app-like-sarahah-business-model-cost/">Navnish Bansal</a> </span></div>
+                      <div class="post-date"><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i>21-Aug-2017</span></div>
+                      <div class="post_comment"><span class="comment-inner"><i class="fa fa-commenting" aria-hidden="true"></i> Comment(s) | 0</span></div>
+                    </div>
+                  </div>
+                  <div class="image_cover">
+                    <div class="blog-img-wrapper"></div>
+                  </div>
+                  <div class="blog-text">
+                    <div class="text-inner">
+                      <p></p>
+                      <p>Want to develop an app like Sarahah Business model and cost to develop an app like Sarahah. In case you’re beyond 18 years old and have as of late perused the “best downloads” chart on Apple’s App Store, you may end up pondering what the heck “Sarahah” is, and how it turned into the most … <a href="https://futureworktechnologies.com/want-develop-app-like-sarahah-business-model-cost/" class="more-link">Continue reading<span class="screen-reader-text"> “Want to develop an app like Sarahah | Business model cost to develop an app like Sarahah”</span></a></p>
+                      <p></p>
+                      <div class="btn-sec"> <a href="https://futureworktechnologies.com/want-develop-app-like-sarahah-business-model-cost/">Continue Reading</a></div>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="blog-post">
+                  <div class="blog-heading">
+                    <h1> <a href="https://futureworktechnologies.com/xiaomi-business-revenue-model-profit-and-strategies/"> Xiaomi Business Revenue Model | Profit and strategies</a></h1>
+                  </div>
+                  <div class="author-details">
+                    <div class="author-image"><img src="https://futureworktechnologies.com/wp-content/uploads/2017/03/PicsArt_14182785692513.jpg" alt=""></div>
+                    <div class="author_icon">
+                      <div class="author-name"><span> By <a href="https://futureworktechnologies.com/xiaomi-business-revenue-model-profit-and-strategies/">Navnish Bansal</a> </span></div>
+                      <div class="post-date"><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i>18-Aug-2017</span></div>
+                      <div class="post_comment"><span class="comment-inner"><i class="fa fa-commenting" aria-hidden="true"></i> Comment(s) | 0</span></div>
+                    </div>
+                  </div>
+                  <div class="image_cover">
+                    <div class="blog-img-wrapper"></div>
+                  </div>
+                  <div class="blog-text">
+                    <div class="text-inner">
+                      <p></p>
+                      <p>Xiaomi, one of China’s top Smartphone makers, is currently the world’s most valuable start-up with a valuation of $46 billion. Last year, the company sold over 70 million smartphones as sales rose 5% to 78 billion&nbsp;yuan ($12.5 billion). However, that missed the company’s previous goal of selling 80 million phones and generating 35% sales growth. … <a href="https://futureworktechnologies.com/xiaomi-business-revenue-model-profit-and-strategies/" class="more-link">Continue reading<span class="screen-reader-text"> “Xiaomi Business Revenue Model | Profit and strategies”</span></a></p>
+                      <p></p>
+                      <div class="btn-sec"> <a href="https://futureworktechnologies.com/xiaomi-business-revenue-model-profit-and-strategies/">Continue Reading</a></div>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="blog-post">
+                  <div class="blog-heading">
+                    <h1> <a href="https://futureworktechnologies.com/blue-apron-business-model-income-sources/"> Blue Apron Business Model | Income Sources</a></h1>
+                  </div>
+                  <div class="author-details">
+                    <div class="author-image"><img src="https://futureworktechnologies.com/wp-content/uploads/2017/03/PicsArt_14182785692513.jpg" alt=""></div>
+                    <div class="author_icon">
+                      <div class="author-name"><span> By <a href="https://futureworktechnologies.com/blue-apron-business-model-income-sources/">Navnish Bansal</a> </span></div>
+                      <div class="post-date"><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i>17-Aug-2017</span></div>
+                      <div class="post_comment"><span class="comment-inner"><i class="fa fa-commenting" aria-hidden="true"></i> Comment(s) | 0</span></div>
+                    </div>
+                  </div>
+                  <div class="image_cover">
+                    <div class="blog-img-wrapper"></div>
+                  </div>
+                  <div class="blog-text">
+                    <div class="text-inner">
+                      <p></p>
+                      <p>&nbsp; &nbsp;Blue Apron Business Model Summary Blue Apron has an extraordinarily uneconomical plan of action that will never make a benefit. &nbsp; The organization’s financials are at present garbage and are breaking down further. &nbsp; Present and future rivalry originates from a huge number of sources. Blue Apron has no complete monetary canal. &nbsp; Go … <a href="https://futureworktechnologies.com/blue-apron-business-model-income-sources/" class="more-link">Continue reading<span class="screen-reader-text"> “Blue Apron Business Model | Income Sources”</span></a></p>
+                      <p></p>
+                      <div class="btn-sec"> <a href="https://futureworktechnologies.com/blue-apron-business-model-income-sources/">Continue Reading</a></div>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="pagination">
+                  <!--Pagination Element -->
+                  <ul ng-if="vm.pager.pages.length" class="pagination" ng-include='"/home/templates/elements/pagination.html"'>
+                </ul>
+                </div>
+                <!-- <div class="pagination"><span>Page 1 of 5</span><span class="current">1</span><a href="https://futureworktechnologies.com/blogs/page/2/" class="inactive">2</a><a href="https://futureworktechnologies.com/blogs/page/2/">Next ›</a><a href="https://futureworktechnologies.com/blogs/page/5/">Last »</a></div> -->
+              </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-sm-3 col-xs-12">
+                <div class="aside-post">
+                    <div class="leftsidebar leftsidebarfixed" style="top: 154px;">
+                      <div class="form-wrapper">
+                        <h5>
+                          <center>
+                            Get A Quote
+                          </center>
+                        </h5>
+                        <div role="form" class="wpcf7" id="wpcf7-f153-o1" dir="ltr" lang="en-US">
+                          <div class="screen-reader-response"></div>
+                          <form action="" method="post" class="wpcf7-form" novalidate="novalidate">
+                            <div style="display: none;">
+                              <input name="_wpcf7" value="153" type="hidden">
+                              <input name="_wpcf7_version" value="4.6" type="hidden">
+                              <input name="_wpcf7_locale" value="en_US" type="hidden">
+                              <input name="_wpcf7_unit_tag" value="wpcf7-f153-o1" type="hidden">
+                              <input name="_wpnonce" value="68646936be" type="hidden">
+                            </div>
+                            <div class="form-group"> 
+                              <input name="name" value="" size="40" class=" form-control" aria-required="true" aria-invalid="false" placeholder="Name" type="text">
+                             </div>
+                            <div class="form-group">
+                              <input name="email" value="" size="40" class="form-control" aria-required="true" aria-invalid="false" placeholder="Email" type="email">
+                              </div>
+                            <div class="form-group"> 
+                            
+                            <input name="tel" value="" size="40" class="form-control" aria-required="true" aria-invalid="false" placeholder="Phone" type="tel">
+                             </div>
+                            <div class="form-group"> <span class="wpcf7-form-control-wrap Budget">
+                              <select name="Budget" class="form-control" aria-required="true" aria-invalid="false">
+                                <option value="Select Budget">Select Budget</option>
+                                <option value="USD 2000 - USD 5000">USD 2000 - USD 5000</option>
+                                <option value="USD 5000 - USD 10000">USD 5000 - USD 10000</option>
+                                <option value="USD 10000 - USD 20000">USD 10000 - USD 20000</option>
+                                <option value="USD 20000 - USD 40000">USD 20000 - USD 40000</option>
+                                <option value="USD 40000 - USD 60000">USD 40000 - USD 60000</option>
+                                <option value="USD 60000 - USD 90000">USD 60000 - USD 90000</option>
+                                <option value="USD 90000 - USD 130000">USD 90000 - USD 130000</option>
+                                <option value="USD 130000 - USD 200000">USD 130000 - USD 200000</option>
+                                <option value="USD 200000+">USD 200000+</option>
+                              </select>
+                              </span></div>
+                            <div class="form-group"> 
+                              <textarea name="textarea-320" cols="40" rows="10" class="form-control" aria-invalid="false" placeholder="Message"></textarea>
+                             </div>
+                            <p>
+                              <input value="Send a Request" class="btn btn-default btn-form" type="submit">
+                              </p>
+                            
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clr"></div>
+  </section>
+  

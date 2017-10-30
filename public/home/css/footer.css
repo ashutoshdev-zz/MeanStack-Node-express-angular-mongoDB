@@ -1,0 +1,205 @@
+/* Footer Section Css Include Here 
+==================================*/
+
+.st-footer {
+    padding: 0px 0 0px 0;
+   /* background: url('http://i.imgur.com/pVxFGLZ.jpg') no-repeat scroll center top #333;*/
+    background-color:#ebebeb;
+    width: 100%;
+    float: left;
+}
+.st-footer .foot-heading {
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    padding: 0 0 20px;
+    margin-bottom: 11px;
+}
+.st-footer .foot-content h6 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+    margin: 4px 0px;
+    text-transform: uppercase;
+}
+.st-footer .foot-content p {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #bbb;
+    margin: 4px 0;
+}
+.st-footer .foot-content ul {
+    margin: 0px;
+    padding: 0px;
+}
+.st-footer .foot-content li {
+    display: block;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #bbb;
+    margin: 4px 0px;
+}
+.st-footer .foot-content li i {
+    margin-right: 15px;
+    color: #fff;
+}
+.st-footer .foot-content li a {
+    text-decoration: none;
+    color: #bbb;
+}
+.st-footer .social-link {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.st-footer .social-link h6 {
+    display: block;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 600;
+    font-weight: normal;
+    line-height: 24px;
+    color: #000;
+    padding: 5px 0px;
+    margin-bottom: 11px;
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: 42px;
+}
+.st-footer .social-link ul {
+    margin: 0px;
+    text-align: right;
+}
+.st-footer .social-link ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+.st-footer .social-link ul li a {
+    display: block;
+    font-size: 16px;
+    color: #000 !important;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.social-link .foot-link li a { color:#000;}
+.st-footer .social-link ul li:first-child a {
+    background-color: #3b5998;
+}
+.st-footer .social-link ul li:nth-child(2) a {
+    background-color: #007bb6;
+}
+.st-footer .social-link ul li:nth-child(3) a {
+    background-color: #ff0000;
+}
+.st-footer ul.foot-link {
+    width: 100%;
+    float: left;
+    margin-bottom: 7px !important;
+    text-align: left !important;
+    padding: 0px;
+}
+.st-footer ul.foot-link li {
+    margin-right: 7px;
+}
+.st-footer ul.foot-link li a {
+    width: auto !important;
+    height: auto !important;
+    line-height: normal !important;
+    background: transparent !important;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+    font-size: 14px !important;
+    color: #000 !important;
+}
+.st-footer ul.foot-link li a:hover,
+.st-footer ul.foot-link li a:focus {
+    text-decoration: underline;
+}
+.st-footer .social-link p.copy-right {
+    width: 100%;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+.bottom-footer {
+    width: 100%;
+    float: left;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    background-color: #ed6869;
+    padding: 6px 0px;
+}
+.bottom-footer h1 {
+    margin: 0px;
+    line-height: normal;
+    color: #fff;
+    font-size: 16px;
+    float: left;
+    margin-top: 8px;
+}
+.bottom-footer form {
+    float: right;
+	margin-right:25%;
+}
+.bottom-footer form input[type="email"] {
+    height: 27px;
+    border: none;
+    background-color: #fff;
+    padding: 7px 13px;
+    color: #767676;
+    float: left;
+}
+.bottom-footer form a#btn-submit {
+    text-decoration: none;
+    height: 27px;
+    line-height: 27px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    padding: 0 17px;
+    background: #cc5142;
+    text-shadow: none;
+    float: left;
+    -webkit-transition: all .35s ease-in-out 0s;
+    -moz-transition: all .35s ease-in-out 0s;
+    -ms-transition: all .35s ease-in-out 0s;
+    -o-transition: all .35s ease-in-out 0s;
+    transition: all .35s ease-in-out 0s;
+}
+.bottom-footer h1 span {
+    text-transform: uppercase;
+}
+.bottom-footer .close-btn {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    padding: 0px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+body .content-area {
+    width: 100% !important;
+    float: left !important;
+    margin: 0px !important;
+    background: #fff !important;
+}
