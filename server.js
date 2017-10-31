@@ -13,7 +13,7 @@ mongoose = require('mongoose'),
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development',
         envConfig = require('./server/env')[env];
 
-mongoose.connect('mongodb://testfwrk:testfwrk@ds147842.mlab.com:47842/fwrk');
+mongoose.connect('mongodb://aaa:aa@ds142722842.mlab.com:42728422/aa');
 mongoose.connection.on('open', function() {
     console.log('Mongoose connected');
 });
